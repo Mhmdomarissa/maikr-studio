@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Source folder (using root for deployment)
+src/
+
+# Reference files
+web_package_mobile/
+DOCS/
