@@ -10,8 +10,12 @@ Thumbs.db
 *.tmp
 *.log
 
+# Deployment
+.netlify/
+.vercel/
+
 # Source folder (using root for deployment)
-src/
+src/IMG_2658-new.png
 
 # Reference files
 web_package_mobile/
