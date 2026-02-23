@@ -1,53 +1,61 @@
 # MAIKR Studio Website
 
-A premium one-page website for MAIKR Studio - AI Development for Real-World Applications.
+Premium website for **MAIKR Studio** — Expert-Guided AI Development for Real-World Applications.
+
+Built with **Next.js 16**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
 ## Live Site
 
-Visit: [maikr-studio.netlify.app](https://maikr-studio.netlify.app) (or your custom domain)
+Deployed via Vercel (auto-deploy on push to `main`).
 
-## Structure
+## Project Structure
 
 ```
-├── index.html      # Main HTML file
-├── styles.css      # All styling
-├── script.js       # Interactivity & form handling
-└── assets/         # Images and logo
-    ├── maikr_logo.png
-    ├── bg_hero_9x16.png
-    ├── bg_swirl_9x16.png
-    └── bg_cta_9x16.png
+src/
+  app/
+    layout.tsx                  # Root layout (Inter font, metadata)
+    page.tsx                    # Homepage
+    globals.css                 # Full design system
+    case-studies/
+      alpha-cv/page.tsx         # Alpha CV case study
+  components/
+    Navbar.tsx                  # Client: scroll effect + mobile menu
+    Footer.tsx                  # Server component
+    ScrollReveal.tsx            # Client: IntersectionObserver animations
+    ContactForm.tsx             # Client: Web3Forms submission
+    sections/                   # 9 homepage section components
+public/                         # Static assets (logo, backgrounds)
 ```
 
 ## Features
 
-- Responsive design (mobile-first)
+- **Next.js App Router** with static prerendering
+- **TypeScript** throughout
+- Mobile-first responsive design
+- Dark premium theme with CSS custom properties
 - Calendly booking integration
 - Web3Forms contact form
-- Smooth scroll animations
-- Dark premium theme
+- Scroll reveal animations
+- SEO metadata + Open Graph tags
+- Security headers via `next.config.ts`
+
+## Development
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # Production build
+npm run lint     # ESLint
+```
+
+## Routes
+
+- `/` — Homepage
+- `/case-studies/alpha-cv` — Alpha CV case study
 
 ## Deployment
 
-This is a static site - simply deploy to any static hosting:
-
-### Netlify (Recommended)
-1. Connect this repo to Netlify
-2. Build settings: None required (static HTML)
-3. Publish directory: `/` (root)
-
-### GoDaddy
-1. Upload all files via FTP/File Manager
-2. Ensure index.html is at the root
-
-### GitHub Pages
-1. Go to Settings → Pages
-2. Select "Deploy from branch" → main
-3. Site will be at `username.github.io/maikr-studio`
-
-## Contact Form
-
-Uses Web3Forms API. Submissions go to the configured email.
+Connected to Vercel via GitHub. Push to `main` triggers auto-deploy.
 
 ## License
 

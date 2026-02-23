@@ -1,5 +1,0 @@
-# Redirects for SPA behavior
-/*    /index.html   200
-
-# Force HTTPS
-http://maikr-studio.netlify.app/*    https://maikr-studio.netlify.app/:splat    301!
