@@ -8,18 +8,102 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = "https://maikr.ai";
+const siteTitle = "MAIKR Studio | Expert-Guided AI Development";
+const siteDescription =
+  "Bridging the gap between AI prototypes and production. We design, build and deploy production-ready AI systems — from automation to custom LLM pipelines. Expert-guided, not prompt-engineered.";
+
 export const metadata: Metadata = {
-  title: "MAIKR Studio | Expert-Guided AI Development",
-  description:
-    "Bridging the gap between AI prototypes and production. Expert-guided AI development for real-world applications.",
-  openGraph: {
-    title: "MAIKR Studio | Expert-Guided AI Development",
-    description:
-      "Bridging the gap between AI prototypes and production. Expert-guided AI development for real-world applications.",
-    type: "website",
-    siteName: "MAIKR Studio",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | MAIKR Studio",
   },
-  metadataBase: new URL("https://maikr.ai"),
+  description: siteDescription,
+  keywords: [
+    "AI development",
+    "AI consulting",
+    "custom AI",
+    "LLM integration",
+    "AI automation",
+    "AI studio",
+    "machine learning",
+    "AI product development",
+    "expert AI development",
+  ],
+  authors: [{ name: "MAIKR Studio", url: siteUrl }],
+  creator: "MAIKR Studio",
+  publisher: "MAIKR Studio",
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "MAIKR Studio",
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MAIKR Studio — Expert-Guided AI Development",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og-image.png"],
+    creator: "@maikr_ai",
+    site: "@maikr_ai",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "MAIKR Studio",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/maikr_logo.png`,
+      },
+      description: siteDescription,
+      email: "omar@maikr.ai",
+      founder: {
+        "@type": "Person",
+        name: "Omar Al-Issa",
+      },
+      sameAs: [
+        "https://linkedin.com/company/maikr",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "MAIKR Studio",
+      description: siteDescription,
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -30,6 +114,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

@@ -4,14 +4,36 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Alpha CV Case Study | MAIKR Studio",
+  title: "Alpha CV — AI Recruitment Platform",
   description:
-    "Alpha CV - AI-Powered Recruitment Intelligence Platform built by MAIKR Studio. See how we automated hiring with 90% faster screening.",
+    "How MAIKR Studio built Alpha CV: an AI-powered recruitment platform delivering 90% faster CV screening and 65% faster hiring. See the full case study.",
+  alternates: {
+    canonical: "https://maikr.ai/case-studies/alpha-cv",
+  },
   openGraph: {
-    title: "Alpha CV Case Study | MAIKR Studio",
+    type: "article",
+    url: "https://maikr.ai/case-studies/alpha-cv",
+    siteName: "MAIKR Studio",
+    locale: "en_US",
+    title: "Alpha CV — AI Recruitment Platform | MAIKR Studio",
     description:
-      "Enterprise AI recruitment platform - 90% faster screening, 65% faster hiring",
-    type: "website",
+      "Enterprise AI recruitment platform — 90% faster screening, 65% faster hiring, built by MAIKR Studio.",
+    images: [
+      {
+        url: "https://maikr.ai/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alpha CV — AI Recruitment Platform by MAIKR Studio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alpha CV — AI Recruitment Platform | MAIKR Studio",
+    description:
+      "90% faster CV screening, 65% faster hiring. See how MAIKR Studio built this enterprise AI recruitment platform.",
+    images: ["https://maikr.ai/og-image.png"],
+    creator: "@maikr_ai",
   },
 };
 
