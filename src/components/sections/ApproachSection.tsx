@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import SpotlightCard from "@/components/ui/SpotlightCard";
 
 const phases = [
   {
@@ -35,11 +36,11 @@ export default function ApproachSection() {
         <div className="approach-grid">
           {phases.map((phase, i) => (
             <ScrollReveal key={phase.number} delay={i * 0.08}>
-              <div className="phase-card">
+              <SpotlightCard className="phase-card">
                 <div className="phase-number">{phase.number}</div>
                 <h3 className="phase-title">{phase.title}</h3>
                 <p className="phase-description">{phase.description}</p>
-              </div>
+              </SpotlightCard>
             </ScrollReveal>
           ))}
         </div>

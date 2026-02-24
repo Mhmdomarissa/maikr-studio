@@ -1,4 +1,5 @@
-import Link from "next/link";
+import GlowingButton from "@/components/ui/GlowingButton";
+import FloatingParticles from "@/components/ui/FloatingParticles";
 
 export default function CTASection() {
   return (
@@ -8,6 +9,7 @@ export default function CTASection() {
         style={{ backgroundImage: "url('/bg_cta_9x16.png')" }}
       />
       <div className="cta-overlay" />
+      <FloatingParticles count={30} />
       <div className="container">
         <div className="cta-content">
           <h2 className="cta-title">
@@ -18,9 +20,9 @@ export default function CTASection() {
             Let&apos;s start with a focused session to explore what&apos;s
             possible for your organization.
           </p>
-          <Link href="#booking" className="btn btn-primary btn-large">
+          <GlowingButton href="#booking" className="btn btn-primary btn-large">
             Request a Free Discovery Call
-          </Link>
+          </GlowingButton>
         </div>
       </div>
     </section>

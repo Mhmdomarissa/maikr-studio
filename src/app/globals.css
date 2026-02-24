@@ -2270,6 +2270,58 @@ h6 {
   }
 }
 
+/* ===== GLOWING BUTTON ===== */
+.glowing-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #a855f7, #ec4899, #8b5cf6, #a855f7);
+  background-size: 300% 300%;
+  animation: glowRotate 4s ease infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  filter: blur(8px);
+}
+
+.glowing-btn:hover::before {
+  opacity: 1;
+}
+
+@keyframes glowRotate {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.glowing-btn-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== SPOTLIGHT CARD OVERRIDES ===== */
+.spotlight-card.feature-card,
+.spotlight-card.phase-card,
+.spotlight-card.why-card,
+.spotlight-card.why-card-highlight,
+.spotlight-card.casestudy-card {
+  border: 1px solid rgba(139, 92, 246, 0.08);
+  transition: border-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-card.feature-card:hover,
+.spotlight-card.phase-card:hover,
+.spotlight-card.why-card:hover,
+.spotlight-card.why-card-highlight:hover,
+.spotlight-card.casestudy-card:hover {
+  border-color: rgba(139, 92, 246, 0.25);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,

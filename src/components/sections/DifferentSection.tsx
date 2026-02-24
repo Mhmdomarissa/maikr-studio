@@ -1,4 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import SpotlightCard from "@/components/ui/SpotlightCard";
+import GridBackground from "@/components/ui/GridBackground";
 
 const features = [
   {
@@ -72,22 +74,24 @@ const features = [
 export default function DifferentSection() {
   return (
     <section id="different" className="section section-different">
-      <div className="container">
-        <h2 className="section-title">
-          WHAT MAKES US <span className="gradient-text">DIFFERENT</span>
-        </h2>
-        <div className="features-grid">
-          {features.map((feature, i) => (
-            <ScrollReveal key={feature.title} delay={(i % 3) * 0.08}>
-              <div className="feature-card">
-                <div className="feature-icon">{feature.icon}</div>
-                <h3 className="feature-title">{feature.title}</h3>
-                <p className="feature-description">{feature.description}</p>
-              </div>
-            </ScrollReveal>
-          ))}
+      <GridBackground variant="dots">
+        <div className="container">
+          <h2 className="section-title">
+            WHAT MAKES US <span className="gradient-text">DIFFERENT</span>
+          </h2>
+          <div className="features-grid">
+            {features.map((feature, i) => (
+              <ScrollReveal key={feature.title} delay={(i % 3) * 0.08}>
+                <SpotlightCard className="feature-card">
+                  <div className="feature-icon">{feature.icon}</div>
+                  <h3 className="feature-title">{feature.title}</h3>
+                  <p className="feature-description">{feature.description}</p>
+                </SpotlightCard>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
-      </div>
+      </GridBackground>
     </section>
   );
 }

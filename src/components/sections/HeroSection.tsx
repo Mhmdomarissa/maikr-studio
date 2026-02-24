@@ -1,4 +1,6 @@
-import Link from "next/link";
+import FloatingParticles from "@/components/ui/FloatingParticles";
+import TextGenerateEffect from "@/components/ui/TextGenerateEffect";
+import GlowingButton from "@/components/ui/GlowingButton";
 
 export default function HeroSection() {
   return (
@@ -8,20 +10,22 @@ export default function HeroSection() {
         style={{ backgroundImage: "url('/bg_hero_9x16.png')" }}
       />
       <div className="hero-overlay" />
+      <FloatingParticles count={50} />
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
-            BRIDGING THE GAP BETWEEN
-            <br />
-            <span className="gradient-text">AI PROTOTYPES</span> AND{" "}
-            <span className="gradient-text">PRODUCTION</span>
+            <TextGenerateEffect
+              words="BRIDGING THE GAP BETWEEN AI PROTOTYPES AND PRODUCTION"
+              highlightWords={["AI", "PROTOTYPES", "PRODUCTION"]}
+              speed={60}
+            />
           </h1>
           <p className="hero-subtitle">
             Expert-Guided AI Development for Real-World Applications
           </p>
-          <Link href="#booking" className="btn btn-primary">
+          <GlowingButton href="#booking" className="btn btn-primary">
             Book a Discovery Session
-          </Link>
+          </GlowingButton>
         </div>
       </div>
     </section>
