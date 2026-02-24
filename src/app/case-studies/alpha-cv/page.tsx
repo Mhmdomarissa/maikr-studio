@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Enterprise AI recruitment platform — 90% faster screening, 65% faster hiring, built by MAIKR Studio.",
     images: [
       {
-        url: "https://maikr.ai/og-image.png",
+        url: "https://maikr.ai/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Alpha CV — AI Recruitment Platform by MAIKR Studio",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Alpha CV — AI Recruitment Platform | MAIKR Studio",
     description:
       "90% faster CV screening, 65% faster hiring. See how MAIKR Studio built this enterprise AI recruitment platform.",
-    images: ["https://maikr.ai/og-image.png"],
+    images: ["https://maikr.ai/og-image.jpg"],
     creator: "@maikr_ai",
   },
 };
