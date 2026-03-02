@@ -34,23 +34,22 @@ export default function FinalCTASection() {
           </motion.div>
 
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
-            Ready to build something{" "}
+            Ready to build{" "}
             <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
-              real?
+              something real?
             </span>
           </h2>
 
           <p className="text-lg text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-10">
-            Start with a free 30-minute discovery session. We&apos;ll cut
-            through the AI hype, validate your idea, and map the fastest path
-            to a working solution.
+            Let&apos;s start with a focused session to explore what&apos;s
+            possible for your organization.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
             <Link href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
               <Button size="xl" className="group">
                 <CalendarDays size={18} />
-                Book a Free Discovery Call
+                Request a Free Discovery Call
                 <ArrowRight
                   size={16}
                   className="transition-transform duration-200 group-hover:translate-x-1"

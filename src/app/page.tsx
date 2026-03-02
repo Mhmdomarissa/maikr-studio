@@ -1,12 +1,15 @@
 import SiteNavbar from "@/components/landing/SiteNavbar";
 import HeroSection from "@/components/landing/HeroSection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
+import WhySection from "@/components/landing/WhySection";
+import MissionSection from "@/components/landing/MissionSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FAQSection from "@/components/landing/FAQSection";
 import FinalCTASection from "@/components/landing/FinalCTASection";
+import BookingSection from "@/components/landing/BookingSection";
 import SiteFooter from "@/components/landing/SiteFooter";
 
 export default function Home() {
@@ -14,43 +17,45 @@ export default function Home() {
     <>
       <SiteNavbar />
       <main className="bg-[#06060a]">
-        {/* Hero */}
         <section id="hero">
           <HeroSection />
         </section>
 
-        {/* Social Proof */}
-        <section id="social-proof">
-          <SocialProofSection />
+        <SocialProofSection />
+
+        <section id="why">
+          <WhySection />
         </section>
 
-        {/* Features */}
-        <section id="features">
-          <FeaturesSection />
+        <section id="mission">
+          <MissionSection />
         </section>
 
-        {/* How It Works */}
         <section id="how-it-works">
           <HowItWorksSection />
         </section>
 
-        {/* Case Studies */}
+        <section id="features">
+          <FeaturesSection />
+        </section>
+
         <section id="case-studies">
           <CaseStudiesSection />
         </section>
 
-        {/* Pricing */}
         <section id="pricing">
           <PricingSection />
         </section>
 
-        {/* FAQ */}
         <section id="faq">
           <FAQSection />
         </section>
 
-        {/* Final CTA */}
         <FinalCTASection />
+
+        <section id="booking">
+          <BookingSection />
+        </section>
       </main>
       <SiteFooter />
     </>

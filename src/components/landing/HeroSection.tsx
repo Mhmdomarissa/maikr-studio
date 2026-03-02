@@ -83,9 +83,7 @@ export default function HeroSection() {
               variants={itemVariants}
               className="text-lg text-zinc-400 leading-relaxed mb-10 max-w-xl"
             >
-              We don&apos;t prompt-engineer your ideas. We architect, build, and
-              ship production-ready AI systems that work in the real world —
-              fast.
+              Expert-Guided AI Development for Real-World Applications
             </motion.p>
 
             <motion.div

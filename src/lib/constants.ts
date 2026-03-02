@@ -1,24 +1,24 @@
 // Navigation
 export const NAV_LINKS = [
-  { href: "#features", label: "Features" },
-  { href: "#how-it-works", label: "How It Works" },
+  { href: "#why", label: "Why Us" },
+  { href: "#how-it-works", label: "Our Approach" },
+  { href: "#features", label: "What's Different" },
   { href: "#case-studies", label: "Case Studies" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
 ] as const;
 
 export const FOOTER_LINKS = {
   product: [
-    { href: "#features", label: "Features" },
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#pricing", label: "Pricing" },
+    { href: "#why", label: "Why Us" },
+    { href: "#how-it-works", label: "Our Approach" },
+    { href: "#features", label: "What's Different" },
     { href: "/case-studies/alpha-cv", label: "Case Studies" },
   ],
   company: [
-    { href: "#why", label: "Why MAIKR" },
     { href: "#mission", label: "Mission" },
+    { href: "#pricing", label: "Pricing" },
     { href: "#faq", label: "FAQ" },
-    { href: "#contact", label: "Contact" },
+    { href: "#booking", label: "Book a Call" },
   ],
   social: [
     { href: "mailto:omar@maikr.ai", label: "Email" },
@@ -40,42 +40,42 @@ export const FEATURES = [
     icon: "Zap",
     title: "AI + Human Expertise",
     description:
-      "We combine the speed of AI with the deep understanding that only seasoned engineers can provide. No hallucinations, no guesswork.",
+      "We combine the speed of AI with the deep understanding and experience that only human professionals can provide.",
     badge: "Core",
   },
   {
     icon: "Layers",
     title: "Beyond LLMs",
     description:
-      "We leverage multiple AI types — language models, computer vision, agentic workflows — choosing the right tool for your exact need.",
+      "We leverage multiple types of AI — from language models to computer vision and agentic workflows — choosing the right tool for your needs.",
     badge: "Multi-modal",
   },
   {
     icon: "ShieldCheck",
-    title: "Production-Ready",
+    title: "Production-Ready Focus",
     description:
-      "We don't stop at prototypes. Every system we ship is secure, scalable, and designed for real organizational environments.",
+      "We don't just build prototypes. We create stable, secure, and scalable systems that work in real organizational environments.",
     badge: "Enterprise",
   },
   {
     icon: "Settings2",
     title: "Flexible Development",
     description:
-      "Requirements change. We expect it and build that flexibility into every phase of our process — no change-order surprises.",
+      "We expect change as your product evolves and accommodate it throughout the development process.",
     badge: "Agile",
   },
   {
     icon: "Clock",
-    title: "Rapid Prototyping",
+    title: "Realistic Expectations",
     description:
-      "From idea to working demo in a single focused session. We use AI coding agents to validate concepts before serious investment.",
-    badge: "Fast",
+      "Building something reliable and stable takes time. We set clear expectations around timelines and costs from the start.",
+    badge: "Transparent",
   },
   {
     icon: "HeartHandshake",
     title: "Long-Term Partnership",
     description:
-      "We don't disappear after launch. We're here to grow your solution as your user base scales and requirements evolve.",
+      "We don't disappear after launch. We're here to help your solution grow and succeed over time.",
     badge: "Support",
   },
 ] as const;
@@ -84,24 +84,24 @@ export const FEATURES = [
 export const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Discovery Session",
+    title: "Fast Prototyping",
     description:
-      "A focused 30-minute call where our experts cut through the AI hype, validate your idea, and identify the fastest path to a working solution.",
-    detail: "Free — no strings attached",
+      "We start with an intensive brainstorming session where our experts work with you to cut through the AI hype and validate your idea.",
+    detail: "Deep research, feasibility analysis & working demo",
   },
   {
     step: "02",
-    title: "Prototype & Validate",
+    title: "Production Development",
     description:
-      "We use AI coding agents to build a working demo in days. Real code, real feedback — before committing to a full build.",
-    detail: "Typical timeline: 3–5 days",
+      "This is where our expertise really makes a difference. We build production-ready systems that AI alone cannot create.",
+    detail: "Enterprise-grade architecture, security & integrations",
   },
   {
     step: "03",
-    title: "Build & Deploy",
+    title: "Enhancement & Support",
     description:
-      "Production-grade development with enterprise architecture, security, and integration into your existing systems. You own everything.",
-    detail: "Typical timeline: 4–12 weeks",
+      "Once your product reaches users, we continue to support you with ongoing improvements and refinements.",
+    detail: "Continuous improvements & long-term product support",
   },
 ] as const;
 
