@@ -8,7 +8,7 @@ import { FAQ_ITEMS } from "@/lib/constants";
 export default function FAQSection() {
   return (
     <section id="faq" className="py-28 relative overflow-hidden">
-      <div className="relative z-10 mx-auto max-w-4xl px-6">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 md:px-10">
         <FadeIn className="text-center mb-14">
           <Badge variant="gradient" className="mb-4">
             FAQ

@@ -10,7 +10,7 @@ export default function SiteFooter() {
 
   return (
     <footer className="relative border-t border-zinc-800/60 bg-zinc-950/80 pt-16 pb-8">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">

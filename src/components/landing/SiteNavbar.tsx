@@ -53,7 +53,7 @@ export default function SiteNavbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between gap-8">
+      <nav className="mx-auto max-w-[1200px] px-6 md:px-10 h-16 flex items-center justify-between gap-8">
         {/* Logo */}
         <Link href="/" onClick={closeMenu} className="shrink-0">
           <Image

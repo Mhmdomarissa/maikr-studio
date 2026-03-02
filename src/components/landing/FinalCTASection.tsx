@@ -23,7 +23,7 @@ export default function FinalCTASection() {
       {/* Glow orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-violet-600/10 rounded-full blur-[80px] pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 md:px-10 text-center">
         <FadeIn>
           <motion.div
             animate={{ scale: [1, 1.02, 1] }}

@@ -36,7 +36,7 @@ export default function FeaturesSection() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 md:px-10">
         <FadeIn className="text-center max-w-2xl mx-auto mb-16">
           <Badge variant="gradient" className="mb-4">
             What Makes Us Different

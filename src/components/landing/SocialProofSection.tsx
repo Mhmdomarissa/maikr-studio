@@ -18,7 +18,7 @@ export default function SocialProofSection() {
     <section id="social-proof" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#06060a] via-zinc-950/20 to-[#06060a]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 md:px-10">
         <FadeIn className="text-center">
           <p className="text-sm font-medium text-zinc-600 uppercase tracking-widest mb-8">
             Built with the best AI stack

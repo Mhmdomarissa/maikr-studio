@@ -17,45 +17,17 @@ export default function Home() {
     <>
       <SiteNavbar />
       <main className="bg-[#06060a]">
-        <section id="hero">
-          <HeroSection />
-        </section>
-
+        <HeroSection />
         <SocialProofSection />
-
-        <section id="why">
-          <WhySection />
-        </section>
-
-        <section id="mission">
-          <MissionSection />
-        </section>
-
-        <section id="how-it-works">
-          <HowItWorksSection />
-        </section>
-
-        <section id="features">
-          <FeaturesSection />
-        </section>
-
-        <section id="case-studies">
-          <CaseStudiesSection />
-        </section>
-
-        <section id="pricing">
-          <PricingSection />
-        </section>
-
-        <section id="faq">
-          <FAQSection />
-        </section>
-
+        <WhySection />
+        <MissionSection />
+        <HowItWorksSection />
+        <FeaturesSection />
+        <CaseStudiesSection />
+        <PricingSection />
+        <FAQSection />
         <FinalCTASection />
-
-        <section id="booking">
-          <BookingSection />
-        </section>
+        <BookingSection />
       </main>
       <SiteFooter />
     </>

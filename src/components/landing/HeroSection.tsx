@@ -49,7 +49,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-violet-950/20 via-transparent to-fuchsia-950/10" />
       <FloatingParticles count={45} />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6">
+      <div className="relative z-10 mx-auto w-full max-w-[1200px] px-6 md:px-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
           <motion.div

@@ -16,7 +16,7 @@ export default function MissionSection() {
     <section id="mission" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-950/5 to-transparent" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 md:px-10">
         <FadeIn className="text-center max-w-2xl mx-auto mb-16">
           <Badge variant="gradient" className="mb-4">
             Our Purpose

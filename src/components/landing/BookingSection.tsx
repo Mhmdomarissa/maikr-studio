@@ -8,7 +8,7 @@ export default function BookingSection() {
     <section id="booking" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-950/5 to-transparent" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 md:px-10">
         <FadeIn className="text-center mb-12">
           <Badge variant="gradient" className="mb-4">
             Book a Session
