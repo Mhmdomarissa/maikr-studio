@@ -1,35 +1,52 @@
-import SiteNavbar from "@/components/landing/SiteNavbar";
-import HeroSection from "@/components/landing/HeroSection";
-import SocialProofSection from "@/components/landing/SocialProofSection";
-import WhySection from "@/components/landing/WhySection";
-import MissionSection from "@/components/landing/MissionSection";
-import FeaturesSection from "@/components/landing/FeaturesSection";
-import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import WhySection from "@/components/sections/WhySection";
+import MissionSection from "@/components/sections/MissionSection";
+import ApproachSection from "@/components/sections/ApproachSection";
+import PhaseDetailSections from "@/components/sections/PhaseDetailSections";
+import DifferentSection from "@/components/sections/DifferentSection";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
-import PricingSection from "@/components/landing/PricingSection";
-import FAQSection from "@/components/landing/FAQSection";
-import FinalCTASection from "@/components/landing/FinalCTASection";
-import BookingSection from "@/components/landing/BookingSection";
-import SiteFooter from "@/components/landing/SiteFooter";
+import CTASection from "@/components/sections/CTASection";
+import BookingSection from "@/components/sections/BookingSection";
+import ContactSection from "@/components/sections/ContactSection";
+
+const navLinks = [
+  { href: "#why", label: "Why Us" },
+  { href: "#mission", label: "Mission" },
+  { href: "#approach", label: "Approach" },
+  { href: "#different", label: "Difference" },
+  { href: "#casestudies", label: "Case Studies" },
+];
+
+const footerLinks = [
+  { href: "#why", label: "Why Us" },
+  { href: "#mission", label: "Mission" },
+  { href: "#approach", label: "Approach" },
+  { href: "#booking", label: "Book a Call" },
+  { href: "#contact", label: "Contact" },
+];
 
 export default function Home() {
   return (
     <>
-      <SiteNavbar />
-      <main className="bg-[#06060a]">
+      <Navbar
+        links={navLinks}
+        ctaLink={{ href: "#booking", label: "Book a Call" }}
+      />
+      <main>
         <HeroSection />
-        <SocialProofSection />
         <WhySection />
         <MissionSection />
-        <HowItWorksSection />
-        <FeaturesSection />
+        <ApproachSection />
+        <PhaseDetailSections />
+        <DifferentSection />
         <CaseStudiesSection />
-        <PricingSection />
-        <FAQSection />
-        <FinalCTASection />
+        <CTASection />
         <BookingSection />
+        <ContactSection />
       </main>
-      <SiteFooter />
+      <Footer links={footerLinks} />
     </>
   );
 }

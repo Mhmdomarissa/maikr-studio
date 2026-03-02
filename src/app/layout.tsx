@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Toaster } from "sonner";
 import "./globals.css";
 
 const inter = Inter({
@@ -121,16 +120,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
-        <Toaster
-          position="bottom-right"
-          toastOptions={{
-            style: {
-              background: "#18181b",
-              border: "1px solid #3f3f46",
-              color: "#fafafa",
-            },
-          }}
-        />
       </body>
       <GoogleAnalytics gaId="G-T4ZW1XKXMC" />
     </html>
