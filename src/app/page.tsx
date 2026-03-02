@@ -1,52 +1,58 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/sections/HeroSection";
-import WhySection from "@/components/sections/WhySection";
-import MissionSection from "@/components/sections/MissionSection";
-import ApproachSection from "@/components/sections/ApproachSection";
-import PhaseDetailSections from "@/components/sections/PhaseDetailSections";
-import DifferentSection from "@/components/sections/DifferentSection";
+import SiteNavbar from "@/components/landing/SiteNavbar";
+import HeroSection from "@/components/landing/HeroSection";
+import SocialProofSection from "@/components/landing/SocialProofSection";
+import FeaturesSection from "@/components/landing/FeaturesSection";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
-import CTASection from "@/components/sections/CTASection";
-import BookingSection from "@/components/sections/BookingSection";
-import ContactSection from "@/components/sections/ContactSection";
-
-const navLinks = [
-  { href: "#why", label: "Why Us" },
-  { href: "#mission", label: "Mission" },
-  { href: "#approach", label: "Approach" },
-  { href: "#different", label: "Difference" },
-  { href: "#casestudies", label: "Case Studies" },
-];
-
-const footerLinks = [
-  { href: "#why", label: "Why Us" },
-  { href: "#mission", label: "Mission" },
-  { href: "#approach", label: "Approach" },
-  { href: "#booking", label: "Book a Call" },
-  { href: "#contact", label: "Contact" },
-];
+import PricingSection from "@/components/landing/PricingSection";
+import FAQSection from "@/components/landing/FAQSection";
+import FinalCTASection from "@/components/landing/FinalCTASection";
+import SiteFooter from "@/components/landing/SiteFooter";
 
 export default function Home() {
   return (
     <>
-      <Navbar
-        links={navLinks}
-        ctaLink={{ href: "#booking", label: "Book a Call" }}
-      />
-      <main>
-        <HeroSection />
-        <WhySection />
-        <MissionSection />
-        <ApproachSection />
-        <PhaseDetailSections />
-        <DifferentSection />
-        <CaseStudiesSection />
-        <CTASection />
-        <BookingSection />
-        <ContactSection />
+      <SiteNavbar />
+      <main className="bg-[#06060a]">
+        {/* Hero */}
+        <section id="hero">
+          <HeroSection />
+        </section>
+
+        {/* Social Proof */}
+        <section id="social-proof">
+          <SocialProofSection />
+        </section>
+
+        {/* Features */}
+        <section id="features">
+          <FeaturesSection />
+        </section>
+
+        {/* How It Works */}
+        <section id="how-it-works">
+          <HowItWorksSection />
+        </section>
+
+        {/* Case Studies */}
+        <section id="case-studies">
+          <CaseStudiesSection />
+        </section>
+
+        {/* Pricing */}
+        <section id="pricing">
+          <PricingSection />
+        </section>
+
+        {/* FAQ */}
+        <section id="faq">
+          <FAQSection />
+        </section>
+
+        {/* Final CTA */}
+        <FinalCTASection />
       </main>
-      <Footer links={footerLinks} />
+      <SiteFooter />
     </>
   );
 }
