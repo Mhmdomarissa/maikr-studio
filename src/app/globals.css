@@ -1594,8 +1594,9 @@ h6 {
 .casestudies-grid {
   display: grid;
   gap: var(--space-xl);
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
 }
 
 .casestudy-card {
@@ -1831,6 +1832,41 @@ h6 {
   color: var(--color-text-muted);
   font-size: var(--font-size-sm);
   margin-top: var(--space-md);
+}
+
+/* CS Overview Details */
+.cs-overview-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-2xl) 0;
+}
+
+.cs-overview-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+}
+
+.cs-overview-label {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.cs-overview-value {
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  font-weight: 500;
 }
 
 /* CS Sections */
