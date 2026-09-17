@@ -106,6 +106,51 @@ export default function CaseStudiesSection() {
                 View Full Case Study &rarr;
               </Link>
             </SpotlightCard>
+
+            <SpotlightCard className="casestudy-card" spotlightColor="rgba(168, 85, 247, 0.2)">
+              <div className="casestudy-badge">DEPLOYED</div>
+              <div className="casestudy-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3 className="casestudy-title">Time Sheets</h3>
+              <p className="casestudy-tagline">
+                AI-Powered Timesheet Automation Portal
+              </p>
+              <p className="casestudy-description">
+                An email-driven portal that extracts leave data from timesheets
+                with AI, validates it, and files it by employee and month for
+                manager review.
+              </p>
+              <div className="casestudy-metrics">
+                <div className="metric">
+                  <span className="metric-value">AI</span>
+                  <span className="metric-label">Leave Extraction</span>
+                </div>
+                <div className="metric">
+                  <span className="metric-value">6</span>
+                  <span className="metric-label">Leave Categories</span>
+                </div>
+                <div className="metric">
+                  <span className="metric-value">Auto</span>
+                  <span className="metric-label">Validation Checks</span>
+                </div>
+              </div>
+              <Link
+                href="/case-studies/time-sheets"
+                className="btn btn-secondary casestudy-btn"
+              >
+                View Full Case Study &rarr;
+              </Link>
+            </SpotlightCard>
           </div>
         </div>
       </GridBackground>
